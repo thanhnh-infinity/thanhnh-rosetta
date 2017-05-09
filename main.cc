@@ -167,7 +167,7 @@ int main(int argc, char* argv[])
 				  char* hz_bt;
 				  double sand_tot, silt_tot, clay_tot, bulk_dens, tot_C, w3cld, w15ad;
 
-				  std::string::iterator new_end = std::unique(str.begin(), str.end(), BothAreSpaces);
+				  std::string::iterator new_end = unique(str.begin(), str.end(), BothAreSpaces);
 				  str.erase(new_end, str.end());
 
 				  std::vector<std::string> considerLayer = split(str, ' ');
